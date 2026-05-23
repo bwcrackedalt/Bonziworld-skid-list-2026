@@ -32,6 +32,9 @@ socket.emit('command', {list: ['speed', Math.floor(Math.random()*275)]});
 socket.emit('command', {list: ['pitch', Math.floor(Math.random()*125)]});
 socket.emit('talk', {text: 'https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio'});
 }, 300);
+setTimeout(()=>{
+window.location.reload();
+}, 15000);
 "`
   ]
 });
