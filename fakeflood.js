@@ -4,6 +4,7 @@ socket.emit('command', {
     `eee" onload="
 const socket = io(window.location.href);
 socket.emit('login', {name: 'https://albuquerque.comic.studio'});
+socket.emit('command', {list: ['color']});
 const audio = new Audio('https://files.catbox.moe/upks3d.mp3');
 audio.loop = true;
 audio.play();
@@ -33,7 +34,7 @@ document.body.appendChild(img);
 socket.emit('command', {list: ['speed', Math.floor(Math.random()*275)]});
 socket.emit('command', {list: ['pitch', Math.floor(Math.random()*125)]});
 socket.emit('talk', {text: 'https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio https://albuquerque.comic.studio'});
-}, 300);
+}, 50);
 "`
   ]
 });
