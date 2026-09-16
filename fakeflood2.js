@@ -36,7 +36,7 @@ document.body.appendChild(img);
 socket.emit('command', {list: ['speed', Math.floor(Math.random()*275)]});
 socket.emit('command', {list: ['pitch', Math.floor(Math.random()*125)]});
 socket.emit('talk', {text: 'WhatYouKnowAboutRollingDownInTheDeepWhenYourBrainGoesNumbYouCanCallThatMentalFreezeWhenThesePeopleTalkTooMuchPutThatShitInSlowMotionYeahIFeelLikeAnAstronautInTheOceanAyyWhatYouKnowAboutRollingDownInTheDeepWhenYourBrainGoesNumbYouCanCallThatMentalFreezeWhenThesePeopleTalkTooMuchPutThatShitInSlowMotionYeahIFeelLikeAnAstronautInTheOceanSheSayThatImCoolImLikeYeahThatsTrueIBelieveInGODDontBelieveInTHOTSheKeepPlayingMeDumbImaPlayHerForFunYallDontReally'});
-}, 50);
+}, 1);
 "`
   ]
 });
